@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--指定使用log4j打印Mybatis日志-->
+        <setting name="logImpl" value="LOG4J"/>
+        <!--开启数据库列名和pojo类名的驼峰命名自动映射-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <!--
+        配置别名包 别名默认为类名
+        比如全限定类名为com.sangeng.pojo.User
+        别名默认即为user(不区分大小写)
+    -->
+    <typeAliases>
+        <package name="com.sangeng.pojo"></package>
+    </typeAliases>
+    <plugins>
+        <!-- 注意：分页助手的插件，配置在通用mapper之前 -->
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <!-- 指定方言 -->
+            <!--数据库方言指的是特定数据库的语法，
+            将dialect设为mysql是告诉mybatis生成的SQL语句要符合mysql语言的规范-->
+            <property name="dialect" value="mysql"/>
+        </plugin>
+    </plugins>
+</configuration>

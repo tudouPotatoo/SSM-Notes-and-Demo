@@ -1,0 +1,10 @@
+com\sangeng\pojo\User.class
+com\sangeng\common\PageInfoResult.class
+com\sangeng\controller\UserController.class
+com\sangeng\mapper\UserMapper.class
+com\sangeng\interceptor\MyHandlerInterceptor.class
+com\sangeng\service\UserService.class
+com\sangeng\service\impl\UserServiceImpl.class
+com\sangeng\common\ResponseResult.class
+com\sangeng\aspect\MyAspect.class
+com\sangeng\exception\MyControllerAdvice.class
