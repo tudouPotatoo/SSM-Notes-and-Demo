@@ -444,11 +444,11 @@ jdbc.password=yourpassword
 
 #### 4.4) mapper文件夹创建
 
-StudentMapper.xml
+(StudentMapper.xml)
 
 注意StudentMapper.java接口和StudentMapper.xml文件的路径要一致。都在com/sangeng/mapper目录下
 
-![img](file:///C:\Users\86176\Desktop\ssm整合.assets\StudentMapper.xml文件路径.png)
+![StudentMapper.xml文件路径](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/StudentMapper.xml%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84.png?raw=true)
 
 
 
@@ -470,7 +470,7 @@ StudentMapper.xml
 
 ### 5) web.xml配置文件
 
-web.xml
+(web.xml)
 
 ~~~~xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -542,13 +542,11 @@ web.xml
 
 
 
-
-
 ### 6) 其它配置文件
 
 #### 6.1) log4j配置文件
 
-log4j.properties
+(log4j.properties)
 
 ~~~~properties
 ### direct log messages to stdout ###
@@ -567,8 +565,6 @@ log4j.appender.file.layout.ConversionPattern=%d{ABSOLUTE} %5p %c{1}:%L - %m%n
 
 log4j.rootLogger=debug, stdout
 ~~~~
-
-
 
 
 
@@ -594,7 +590,7 @@ insert  into `user`(`id`,`username`,`age`,`address`) values (1,'UZI',19,'上海'
 
 
 
-![据库表初始状](C:\Users\86176\Desktop\ssm整合.assets\数据库表初始状态.png)
+![数据库表初始状态](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E5%88%9D%E5%A7%8B%E7%8A%B6%E6%80%81.png?raw=true)
 
 
 
@@ -653,7 +649,7 @@ UserMapper.java
 ~~~~java
 public interface UserMapper {
     User getById(Integer id);
-}![试成功界](C:\Users\86176\Desktop\ssm整合.assets\测试成功界面.png)![试成功界](C:\Users\86176\Desktop\ssm整合.assets\测试成功界面.png)
+}
 ~~~~
 
 UserMapper.xml
@@ -676,7 +672,7 @@ UserMapper.xml
 
 测试结果
 
-![试成功界](C:\Users\86176\Desktop\ssm整合.assets\测试成功界面.png)
+![测试成功界面](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/%E6%B5%8B%E8%AF%95%E6%88%90%E5%8A%9F%E7%95%8C%E9%9D%A2.png?raw=true)
 
 
 
@@ -753,7 +749,7 @@ public class UserController {
 
 
 
-![试成功界面(统一响应结果](C:\Users\86176\Desktop\ssm整合.assets\测试成功界面(统一响应结果).png)
+![测试成功界面(统一响应结果)](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/%E6%B5%8B%E8%AF%95%E6%88%90%E5%8A%9F%E7%95%8C%E9%9D%A2(%E7%BB%9F%E4%B8%80%E5%93%8D%E5%BA%94%E7%BB%93%E6%9E%9C).png?raw=true)
 
 
 
@@ -825,7 +821,7 @@ UserMapper.xml
 </mapper>
 ~~~~
 
-![etAll查询结](C:\Users\86176\Desktop\ssm整合.assets\getAll查询结果.png)
+![getAll查询结果](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/getAll%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C.png?raw=true)
 
 ##### 3.1.3 分页查询所有用户
 
@@ -924,7 +920,7 @@ public class UserServiceImpl implements UserService {
 
 ~~~~
 
-![etByPage查询结](C:\Users\86176\Desktop\ssm整合.assets\getByPage查询结果.png)
+![getByPage查询结果](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/getByPage%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C.png?raw=true)
 
 ##### 3.1.4 插入用户
 
@@ -1009,11 +1005,11 @@ UserMapper.xml
 
 （1）响应结果：
 
-![ddUser响应结](C:\Users\86176\Desktop\ssm整合.assets\addUser响应结果.png)
+![addUser响应结果](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/addUser%E5%93%8D%E5%BA%94%E7%BB%93%E6%9E%9C.png?raw=true)
 
 （2）数据库结果：
 
-![ddUser数据库结](C:\Users\86176\Desktop\ssm整合.assets\addUser数据库结果.png)
+![addUser数据库结果](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/addUser%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BB%93%E6%9E%9C.png?raw=true)
 
 
 
@@ -1097,15 +1093,15 @@ UserMapper.xml
 
 （1）响应结果：
 
-![eleteUser响应结](C:\Users\86176\Desktop\ssm整合.assets\deleteUser响应结果.png)
+![deleteUser响应结果](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/deleteUser%E5%93%8D%E5%BA%94%E7%BB%93%E6%9E%9C.png?raw=true)
 
 （2）删除前：
 
-![eleteUser删除](C:\Users\86176\Desktop\ssm整合.assets\deleteUser删除前.png)
+![deleteUser删除前](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/deleteUser%E5%88%A0%E9%99%A4%E5%89%8D.png?raw=true)
 
 （3）删除后：
 
-![eleteUser删除](C:\Users\86176\Desktop\ssm整合.assets\deleteUser删除后.png)
+![deleteUser删除后](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/deleteUser%E5%88%A0%E9%99%A4%E5%90%8E.png?raw=true)
 
 ##### 3.1.6 更新用户
 
@@ -1191,15 +1187,15 @@ UserMapper.xml
 
 （1）响应结果：
 
-![pdateUser响应结](C:\Users\86176\Desktop\ssm整合.assets\updateUser响应结果.png)
+![updateUser响应结果](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/updateUser%E5%93%8D%E5%BA%94%E7%BB%93%E6%9E%9C.png?raw=true)
 
 （2）更新前：
 
-![pdateUser更新](C:\Users\86176\Desktop\ssm整合.assets\updateUser更新前.png)
+![updateUser更新前](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/updateUser%E6%9B%B4%E6%96%B0%E5%89%8D.png?raw=true)
 
 （3）更新后：
 
-![pdateUser更新](C:\Users\86176\Desktop\ssm整合.assets\updateUser更新后.png)
+![updateUser更新后](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/updateUser%E6%9B%B4%E6%96%B0%E5%90%8E.png?raw=true)
 
 #### 3.2 其它
 
@@ -1261,7 +1257,7 @@ public ResponseResult getAll() {
 
 测试结果：
 
-![试统一异常处](C:\Users\86176\Desktop\ssm整合.assets\测试统一异常处理.png)
+![测试统一异常处理](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/%E6%B5%8B%E8%AF%95%E7%BB%9F%E4%B8%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86.png?raw=true)
 
 
 
@@ -1330,7 +1326,7 @@ spring-mvc.xml（将下列配置加入spring-mvc.xml文件中）
 
 测试结果：
 
-![截器测试结](C:\Users\86176\Desktop\ssm整合.assets\拦截器测试结果.png)
+![拦截器测试结果](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/%E6%8B%A6%E6%88%AA%E5%99%A8%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C.png?raw=true)
 
 
 
@@ -1426,11 +1422,11 @@ public class UserServiceImpl implements UserService {
 
 （1）执行事务前：
 
-![行事务](C:\Users\86176\Desktop\ssm整合.assets\执行事务前.png)
+![执行事务前](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/%E6%89%A7%E8%A1%8C%E4%BA%8B%E5%8A%A1%E5%89%8D.png?raw=true)
 
 （2）执行事务后：
 
-![行事务](C:\Users\86176\Desktop\ssm整合.assets\执行事务后.png)
+![执行事务后](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/%E6%89%A7%E8%A1%8C%E4%BA%8B%E5%8A%A1%E5%90%8E.png?raw=true)
 
 说明事务配置生效
 
@@ -1515,4 +1511,4 @@ public class UserServiceImpl implements UserService {
 
    测试结果：
 
-   ![OP测试结](C:\Users\86176\Desktop\ssm整合.assets\AOP测试结果.png)
+   ![AOP测试结果](https://github.com/5Pointz/SSM-Notes-and-Demo/blob/main/SSM%E6%95%B4%E5%90%88/SSM%E6%95%B4%E5%90%88%E6%AD%A5%E9%AA%A4%E7%AC%94%E8%AE%B0/ssm%E6%95%B4%E5%90%88.assets/AOP%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C.png?raw=true)
